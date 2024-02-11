@@ -82,6 +82,9 @@ while not exit:
 
                 user_text = user_text[:-1]
 
+            if event.key == pygame.K_DELETE:
+                user_text = ''
+
             else:
                 user_text += event.unicode
 
